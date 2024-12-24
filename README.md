@@ -1,7 +1,7 @@
 "# Drone" 
 # Summary
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/03045eb3-ad52-466e-993e-65791c3db2bf/0bae7a73-4c17-469b-a3d4-ba231e98dc21/image.png)
+![image.png](img/0.png)
 
 1.  Model 선택 → YOLO8m
 2. 전처리 : Gray Scaling 이 가장 효과있음
@@ -15,8 +15,7 @@
 
 # 문제현황
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/03045eb3-ad52-466e-993e-65791c3db2bf/5ad42e87-4eb0-4d84-9708-4a00956aed11/image.png)
-
+![image.png](img/1.png)
 - 현 시점에서 드론 격추하는 무기는 머싱건, 레이저, 미사일임
 - 이들은 모두 비쌈, 휴대하기 어려움, 수동조작임
 
@@ -69,7 +68,7 @@ https://youtu.be/ggDVaY9Rwd8?si=ZnSWbsS8C8UYHvTu
 - 새 (-150), 드론(-100), 헬리콥터(-200)
 - 결과 - 별차이 없음 (헬리콥터 드론 구분을 못함)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/03045eb3-ad52-466e-993e-65791c3db2bf/a11c1312-c45c-4583-9ae4-cd26ae17e69a/image.png)
+![image.png](img/2-1.png)
 
 https://youtu.be/iOF9qp0KJUc?si=QOSbiEzApc7RwUt6
 
@@ -78,7 +77,7 @@ https://youtu.be/iOF9qp0KJUc?si=QOSbiEzApc7RwUt6
 - 새(+350), 드론(+200), 이동형드론(+200)
 - 결과 - 조금의 성능향상
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/03045eb3-ad52-466e-993e-65791c3db2bf/453b322a-f12b-46a6-b96b-e7caeef4b9d2/image.png)
+![image.png](img/2-2.png)
 
 https://youtu.be/H23Qeg6Q7kY?si=LM2wfbtxgJG_YAkg
 
@@ -88,7 +87,7 @@ https://youtu.be/H23Qeg6Q7kY?si=LM2wfbtxgJG_YAkg
 - 결과 - 성능이 눈에 띄게 좋아짐
     - **배경이 문제인 것 같음**
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/03045eb3-ad52-466e-993e-65791c3db2bf/baeac7c1-3f41-474e-9acb-3c53209d6c9a/image.png)
+    ![image.png](img/2-3.png)
     
     - 
 
@@ -105,10 +104,8 @@ https://youtu.be/fJf6gYzBWyE
 | Blur | 이미지 흐릿하게 |  |  |
 - 결과 : mAP는 0.1 정도 올라갔으나 실제 TEST결과 오히려 더 못 잡음
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/03045eb3-ad52-466e-993e-65791c3db2bf/8a89373e-2d57-4f81-9fbd-aa526192b918/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/03045eb3-ad52-466e-993e-65791c3db2bf/50993f1b-87c4-48a2-a22d-85c18a692243/image.png)
-
+![image.png](img/2-4-1.png)
+![image.png](img/2-4-2.png)
 - **결론 : 성능 향상에 있어서 DATA의 질은 중요함, 성급한 Augmentation 은 오히려 성능을 낮춤**
 
 ## 2. Model tunning
